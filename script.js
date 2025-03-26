@@ -780,7 +780,7 @@ function submitPayment() {
     }
     
     // Validate phone number (basic check)
-    if (!/^\d{10}$/.test(phoneNumber)) {
+    if (!/^[0-9]{10}$/.test(phoneNumber)) {
         messageDiv.textContent = 'Please enter a valid 10-digit phone number';
         messageDiv.className = 'payment-message error';
         return;
